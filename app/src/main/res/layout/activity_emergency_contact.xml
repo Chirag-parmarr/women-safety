@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".emergencyContact"
+    android:background="#F8F8F8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_back"
+
+            />
+
+        <ImageView
+            android:id="@+id/hamberger_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:src="@drawable/ic_hamberger"
+
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:height="50dp"
+        android:id="@+id/add_contacts_btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/skyblue"
+        android:elevation="30dp"
+        android:textSize="18dp"
+        android:background="@drawable/edittext_bg"
+
+
+
+        android:layout_height="wrap_content"
+        android:text="+Add Contacts" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contact_rv"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
